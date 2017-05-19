@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application Services", "Application Services", "{751BAE5F-907C-43FE-A4A0-CE138CFF7917}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "User Login", "User Login", "{8629A210-678C-432B-99AE-DFC34E9B6783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientCredentials.MVC", "ClientCredentials.MVC\ClientCredentials.MVC.csproj", "{DD2AD99D-89F7-4810-A9C5-8FE8488F090D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bibliotecas", "Bibliotecas", "{9B1DC4CF-5AF2-4EB6-8F4D-3FA25627ABC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constants", "Constants\Constants.csproj", "{FCB59FC4-D2F7-4A1B-9298-D6078E39BF85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hybrid", "Hybrid", "{437E28DE-5377-4F1C-908B-2111502CD069}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Implicit", "Implicit", "{E445897E-32C5-4CF4-87EA-595FD57EC8D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.Implicit.Manual", "MVC.Implicit.Manual\MVC.Implicit.Manual.csproj", "{63AE1E03-AD58-4DDD-B961-82E42B1E135E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD2AD99D-89F7-4810-A9C5-8FE8488F090D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD2AD99D-89F7-4810-A9C5-8FE8488F090D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD2AD99D-89F7-4810-A9C5-8FE8488F090D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD2AD99D-89F7-4810-A9C5-8FE8488F090D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCB59FC4-D2F7-4A1B-9298-D6078E39BF85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB59FC4-D2F7-4A1B-9298-D6078E39BF85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB59FC4-D2F7-4A1B-9298-D6078E39BF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB59FC4-D2F7-4A1B-9298-D6078E39BF85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63AE1E03-AD58-4DDD-B961-82E42B1E135E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63AE1E03-AD58-4DDD-B961-82E42B1E135E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63AE1E03-AD58-4DDD-B961-82E42B1E135E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63AE1E03-AD58-4DDD-B961-82E42B1E135E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DD2AD99D-89F7-4810-A9C5-8FE8488F090D} = {751BAE5F-907C-43FE-A4A0-CE138CFF7917}
+		{FCB59FC4-D2F7-4A1B-9298-D6078E39BF85} = {9B1DC4CF-5AF2-4EB6-8F4D-3FA25627ABC9}
+		{437E28DE-5377-4F1C-908B-2111502CD069} = {8629A210-678C-432B-99AE-DFC34E9B6783}
+		{E445897E-32C5-4CF4-87EA-595FD57EC8D5} = {8629A210-678C-432B-99AE-DFC34E9B6783}
+		{63AE1E03-AD58-4DDD-B961-82E42B1E135E} = {E445897E-32C5-4CF4-87EA-595FD57EC8D5}
+	EndGlobalSection
+EndGlobal
