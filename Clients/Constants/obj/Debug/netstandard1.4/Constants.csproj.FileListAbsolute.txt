@@ -1,7 +1,0 @@
-C:\Github\acessocidadao-samples\Clients\Constants\bin\Debug\netstandard1.4\Constants.deps.json
-C:\Github\acessocidadao-samples\Clients\Constants\bin\Debug\netstandard1.4\Constants.dll
-C:\Github\acessocidadao-samples\Clients\Constants\bin\Debug\netstandard1.4\Constants.pdb
-C:\Github\acessocidadao-samples\Clients\Constants\obj\Debug\netstandard1.4\Constants.csprojResolveAssemblyReference.cache
-C:\Github\acessocidadao-samples\Clients\Constants\obj\Debug\netstandard1.4\Constants.AssemblyInfo.cs
-C:\Github\acessocidadao-samples\Clients\Constants\obj\Debug\netstandard1.4\Constants.dll
-C:\Github\acessocidadao-samples\Clients\Constants\obj\Debug\netstandard1.4\Constants.pdb
