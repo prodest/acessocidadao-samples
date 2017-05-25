@@ -3,29 +3,33 @@
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>Implicit com biblioteca</h1>
+    <p>
+        Projeto usando o flow Implicit do OpenId Connect com bibliotecas
+    </p>
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+    <ol>
+        <li>
+            Criar projeto web sem autenticação
+        </li>
+        <li>
+            Instalar os seguintes pacotes do NUGET:
+            <ul>
+                <li>Microsoft.Owin.Host.Systemweb</li>
+                <li>Microsoft.Owin.Security.Cookies</li>
+                <li>Microsoft.Owin.Security.OpenIdConnect</li>
+            </ul>
+            Obs.: Lembrar de criar arquivo startup para o OWIN
+        </li>
+        <li>
+            Configurar o projeto para rodar em https
+        </li>
+        <li>
+            Esse projeto de exemplo só funciona no endereço (https://localhost:44385/) que é o que está configurado como redirect uri. Se colocar outro não vai funcionar.
+        </li>
+    </ol>
+    <p>Esse exemplo está usando o Acesso Cidadão publicado no ambiente developer (https://developers.es.gov.br/acessocidadao/)</p>
+    <p>Atentar para o fato que até os usuários são diferentes do ambiente normal de produção!</p>
 </div>

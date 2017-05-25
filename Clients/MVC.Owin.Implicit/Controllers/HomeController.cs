@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Web;
 using System.Web.Mvc;
 
@@ -21,11 +22,9 @@ namespace MVC.Owin.Implicit.Controllers
         }
 
         [Authorize]
-        public ActionResult Contact()
+        public ActionResult Logado()
         {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            return View((User as ClaimsPrincipal).Claims);
         }
     }
 }

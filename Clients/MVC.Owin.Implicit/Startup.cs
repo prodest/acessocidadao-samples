@@ -43,9 +43,9 @@ namespace MVC.Owin.Implicit
                 // Qualquer scope além desses apenas para sistemas corporativos do estado
                 // e precisa de permissão explicita da área responsável. Fazer requisição devidamente
                 // fundamentada de porque a informação é necessária
-                //Scope = "openid cpf nome email",
+                Scope = "openid cpf nome email",
                 //Essas permissões só podem ser usadas em sistemas corporativos
-                Scope = "openid cpf nome email dataNascimento permissoes roles",
+                //Scope = "openid cpf nome email dataNascimento permissoes roles",
 
                 // Configura o middleware do openid connect para usar o middleware configurado acima
                 // para controlar a autenticação usando cookies
@@ -75,7 +75,7 @@ namespace MVC.Owin.Implicit
                         var userInfoList = userInfo.Claims.ToList();
 
                         var sub = userInfo.FindFirst("sub");
-                        var nome = userInfo.FindFirst("apelido") != null ? userInfo.FindFirst("apeldio") : userInfo.FindFirst("nome");
+                        var nome = userInfo.FindFirst("apelido") != null ? userInfo.FindFirst("apelido") : new Claim("apelido", userInfo.FindFirst("nome").Value);
                         var nomeCompleto = userInfo.FindFirst("nome");
                         var email = userInfo.FindFirst("email");
                         var cpf = userInfo.FindFirst("cpf");
