@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Constants
+namespace Samples
 {
     public static class Constants
     {
@@ -12,7 +12,7 @@ namespace Constants
         public const string UserInfoEndpoint = BaseAddress + "/connect/userinfo";
         public const string IdentityTokenValidationEndpoint = BaseAddress + "/connect/identitytokenvalidation";
 
-        public const string ClientId = "";
+        public const string ClientIdImplicit = "f751504d-dd45-47ee-8551-7cf0e40c29eb";
         public const string ClientSecret = "";
     }
 }

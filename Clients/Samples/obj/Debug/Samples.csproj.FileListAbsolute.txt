@@ -1,0 +1,5 @@
+C:\Github\acessocidadao-samples\Clients\Samples\bin\Debug\Samples.dll
+C:\Github\acessocidadao-samples\Clients\Samples\bin\Debug\Samples.pdb
+C:\Github\acessocidadao-samples\Clients\Samples\obj\Debug\Samples.csprojResolveAssemblyReference.cache
+C:\Github\acessocidadao-samples\Clients\Samples\obj\Debug\Samples.dll
+C:\Github\acessocidadao-samples\Clients\Samples\obj\Debug\Samples.pdb

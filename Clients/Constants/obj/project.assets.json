@@ -1,7 +1,7 @@
 {
   "version": 2,
   "targets": {
-    ".NETStandard,Version=v1.4": {
+    ".NETStandard,Version=v1.3": {
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -694,7 +694,7 @@
           "System.Security.Cryptography.Primitives": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.4/System.Security.Cryptography.Algorithms.dll": {}
+          "ref/netstandard1.3/System.Security.Cryptography.Algorithms.dll": {}
         }
       },
       "System.Security.Cryptography.Encoding/4.3.0": {
@@ -754,7 +754,7 @@
           "System.Security.Cryptography.Encoding": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.4/System.Security.Cryptography.X509Certificates.dll": {}
+          "ref/netstandard1.3/System.Security.Cryptography.X509Certificates.dll": {}
         }
       },
       "System.Text.Encoding/4.3.0": {
@@ -3698,7 +3698,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETStandard,Version=v1.4": [
+    ".NETStandard,Version=v1.3": [
       "NETStandard.Library >= 1.6.1"
     ]
   },
@@ -3714,16 +3714,16 @@
       "outputPath": "C:\\Github\\acessocidadao-samples\\Clients\\Constants\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
-        "netstandard1.4"
+        "netstandard1.3"
       ],
       "frameworks": {
-        "netstandard1.4": {
+        "netstandard1.3": {
           "projectReferences": {}
         }
       }
     },
     "frameworks": {
-      "netstandard1.4": {
+      "netstandard1.3": {
         "dependencies": {
           "NETStandard.Library": {
             "target": "Package",
