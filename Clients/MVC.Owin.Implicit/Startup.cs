@@ -38,14 +38,12 @@ namespace MVC.Owin.Implicit
             {
                 Authority = Constants.BaseAddress,
                 ClientId = Constants.ClientIdImplicit,
-                RedirectUri = "https://localhost:44358/",
+                RedirectUri = Constants.RedirectUriImplicit,
                 ResponseType = "id_token",
                 // Qualquer scope além desses apenas para sistemas corporativos do estado
                 // e precisa de permissão explicita da área responsável. Fazer requisição devidamente
                 // fundamentada de porque a informação é necessária
-                Scope = "openid cpf nome email",
-                //Essas permissões só podem ser usadas em sistemas corporativos
-                //Scope = "openid cpf nome email dataNascimento permissoes roles",
+                Scope = "openid nome email",
 
                 // Configura o middleware do openid connect para usar o middleware configurado acima
                 // para controlar a autenticação usando cookies
@@ -69,8 +67,6 @@ namespace MVC.Owin.Implicit
                             "role");
 
                         // Pegando as claims que o middleware já mapeou automático do retorno do Acesso Cidadão
-                        // Nesse exemplo não existem roles, o grupo está vazio, mas se tivesse seria mapeado
-                        // desse jeito
                         var userInfo = n.AuthenticationTicket.Identity;
                         var userInfoList = userInfo.Claims.ToList();
 
@@ -78,14 +74,10 @@ namespace MVC.Owin.Implicit
                         var nome = userInfo.FindFirst("apelido") != null ? userInfo.FindFirst("apelido") : new Claim("apelido", userInfo.FindFirst("nome").Value);
                         var nomeCompleto = userInfo.FindFirst("nome");
                         var email = userInfo.FindFirst("email");
-                        var cpf = userInfo.FindFirst("cpf");
-                        var roles = userInfo.FindAll("role");
                         nid.AddClaim(sub);
                         nid.AddClaim(nome);
                         nid.AddClaim(nomeCompleto);
                         nid.AddClaim(email);
-                        nid.AddClaim(cpf);
-                        nid.AddClaims(roles);
 
                         nid.AddClaim(new Claim("id_token", n.ProtocolMessage.IdToken));
 
